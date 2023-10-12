@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Mulish:wght@800&display=swap');
+* {
+    font-size: 95%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(147, 224, 254);
+    font-family: 'Mulish', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+::selection {
+    color: rgb(147, 224, 254);
+    background: rgb(15, 15, 15);
+}
+
+#si:hover {
+    color: #cc2366;
+    background-color: rgb(35, 35, 35);
+}
+
+#sf:hover {
+    color: rgb(26, 140, 216);
+    background-color: rgb(35, 35, 35);
+}
+
+#sy:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(35, 35, 35);
+}
+
+#si,
+#sf,
+#sy {
+    color: rgb(147, 224, 254);
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+#cl {
+    color: rgb(147, 224, 254);
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+#cl:hover {
+    color: rgb(250, 250, 250);
+    background-color: rgb(147, 224, 254);
+    border-radius: 4px;
+}
+
+#use {
+    color: rgb(147, 224, 254);
+    font-size: 1.9rem;
+    font-weight: 900;
+    margin-left: 3.37vw;
+}
+
+#use:hover {
+    color: rgb(250, 250, 250);
+    background-color: rgb(147, 224, 254);
+    border-radius: 4px;
+}
+
+#r {
+    color: rgb(0, 0, 0);
+    font-size: 1.9rem;
+    font-weight: 900;
+}
+
+#r:hover {
+    color: rgb(147, 224, 254);
+    cursor: pointer;
+}
+
+#fh {
+    color: rgb(147, 224, 254);
+    font-size: 1.9rem;
+    font-weight: 900;
+    margin-left: 3.37vw;
+}
+
+#fh:hover {
+    color: rgb(250, 250, 250);
+    background-color: rgb(147, 224, 254);
+    border-radius: 4px;
+}
+
+#rex {
+    color: rgb(147, 224, 254);
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-left: 3.37vw;
+}
+
+#rex:hover {
+    color: rgb(250, 250, 250);
+    background-color: rgb(147, 224, 254);
+    border-radius: 4px;
+}
+
+#sek1 {
+    color: rgb(147, 224, 254);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+button {
+    height: max-content;
+    width: max-content;
+    background-color: rgb(0, 0, 0);
+    color: rgb(147, 224, 254);
+    border: 4px solid rgb(45, 45, 45);
+    border-radius: 20%;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(147, 224, 254);
+    color: rgb(0, 0, 0);
+}
+
+.x {
+    background-color: rgb(147, 224, 254);
+    color: rgb(0, 0, 0);
+    border-radius: 20%;
+}
+
+.x:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(147, 224, 254);
+}
+
+#sek2 {
+    color: rgb(147, 224, 254);
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#sek1:hover,
+#sek2:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(147, 224, 254);
+    border-radius: 4px;
+}
+
+.card {
+    height: 60px;
+    width: 80px;
+    position: relative;
+    background: none;
+    margin-left: 4vw;
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    height: 60px;
+    width: 80px;
+    margin-top: -1px;
+}
+
+.card:hover .img-top {
+    display: block;
+}
+
+#sek1,
+#sek2,
+#si,
+#sf,
+#sy,
+#cl {
+    margin-left: 3.37vw;
+}
+
+#kapat2:hover {
+    background-color: rgb(200, 0, 0);
+    cursor: pointer;
+}
+
+#kapat:hover {
+    background-color: rgb(200, 0, 0);
+    cursor: pointer;
+}
+
+#edison {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 210, 210);
+    font-size: 2.5vw;
+}
+
+#L1,
+#L4 {
+    color: #4285f4;
+}
+
+#L2,
+#L6 {
+    color: #ea4335;
+}
+
+#L3 {
+    color: #fbbc05;
+}
+
+#L5 {
+    color: #34a853;
+}
+
+#L1:active,
+#L4:active {
+    background-color: #4285f4;
+    text-decoration: none;
+}
+
+#L2:active,
+#L6:active {
+    background-color: #ea4335;
+    text-decoration: none;
+}
+
+#L3:active {
+    background-color: #fbbc05;
+    text-decoration: none;
+}
+
+#L5:active {
+    background-color: #34a853;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(147, 224, 254);
+    cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+#resim {
+    position: relative;
+    height: 23rem;
+    width: 23rem;
+    background-color: rgb(255, 255, 250);
+    margin-top: 2rem;
+    margin-left: -1rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#arrtiran:hover,
+#azaltan:hover {
+    background-color: rgb(147, 224, 254);
+    color: rgb(0, 0, 0);
+}
+
+#resim:hover {
+    --zoom: 3;
+}
+
+#resim #res {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(var(--zoom, 1));
+    transform-origin: var(--x) var(--y);
+    transition: transform 0.5s ease;
+}
+
+title {
+    color: rgb(147, 224, 254);
+}
