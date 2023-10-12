@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okuz/Online/alsiveris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="css\Css.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="keywords" content="Okuz-Online/alisveris" />
+    <meta name="description" content="Okuz-Online/alisveris" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="card">
+                    <img src="images/LogoNorm2.png" alt="Logo..." style="height:60px; width: 80px;" />
+                    <img src="images/LogoIntr2.png" class="img-top" alt="Logo interaction img" />
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="margin-left:3%;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="haber.html" id="sek1">Haber</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alisveris.html" id="sek2" style="color:rgb(255,255,255);">Alışveriş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/Death02690874" target="_blank" id="cl"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/darklord3279/" target="_blank" id="cl"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/c/Geekyapar" target="_blank" id="cl"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cl"><i class="fa-solid fa-calculator" id="red"></i></a>
+                    </li>
+                    <div id="main" class="container bg-dark mt-2 ms-5" style="height:fit-content; width:fit-content; z-index:1;">
+                        <div class="result2">
+                            <input type="text" name="result" class="result" placeholder="0" readonly="yes" style="background-color:rgb(10,10,10); height:2rem; width:14rem; color: rgb(147,224,254);" />
+                        </div>
+                        <div id="numbers" class="container-fluid">
+                            <button id="clean" class="clear col-4 bg-danger" value="C" title="Silmek İstediğine Emin Misin ?" style="height:2rem; width:3rem">C</button>
+                            <button type="button" value="+/-" id="re" class="col-3 x">+/-</button>
+                            <button type="button" value="/" id="ses2" class="x col-4">/</button>
+                            <br/>
+                            <button type="button" value="7" class="col-2">7</button>
+                            <button type="button" value="8" class="col-2">8</button>
+                            <button type="button" value="9" class="col-2">9</button>
+                            <button type="button" value="*" class="x col-4">*</button>
+                            <br/>
+                            <button type="button" value="4" class="col-2">4</button>
+                            <button type="button" value="5" class="col-2">5</button>
+                            <button type="button" value="6" class="col-2">6</button>
+                            <button type="button" value="-" class="x col-4">-</button>
+                            <br/>
+                            <button type="button" value="1" class="col-2">1</button>
+                            <button type="button" value="2" class="col-2">2</button>
+                            <button type="button" value="3" class="col-2">3</button>
+                            <button type="button" value="+" class="x col-4">+</button>
+                            <br/>
+                            <button type="button" value="0" id="ses" class="col-3">0</button>
+                            <button type="button" value="." class="col-3">.</button>
+                            <button type="button" value="=" id="calculate" class="x col-4">=</button>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <button type="button" class="w-auto" id="rex" data-toggle="modal" data-target=".bd-example-modal-md"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade bd-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-header bg-black">
+                <h4 class="modal-title"> <i class="fa-solid fa-basket-shopping"></i> Sepetim</h4>
+                <button type="button" id="x" data-bs-dismiss="modal">X</button>
+            </div>
+            <div class="modal-content">
+
+                <hr>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">Ürün-Adı</th>
+                            <th scope="col" class="text-center">Ürün-Adet</th>
+                            <th scope="col" class="text-center">ürün-Tutar</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="urunler" class="bg-dark col-6">
+                    </tbody>
+                    <tr style="font-size:2rem;">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" id="delet-all" class="btn btn-danger">Sepeti-Boşalt</a></td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-md">
+                <a href="Urun1.html" title="Play-Doh 4'lü Hamur - B6508 Klasik Renkler 448 g"> <img src="images/urun1.png" id="images1" class="img-thumbnail" /></a>
+                <a href="urun1.html">
+                    <h3 title="Play-Doh 4'lü Hamur - B6508 Klasik Renkler 448 g">Play-Doh 4'lü Hamur - B6508 Klasik Renkler 448 g</h3>
+                    <h3 id="price" title="Play-Doh 4'lü Hamur - B6508 Klasik Renkler 448 g">22.02 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun2.html" title="LEGO® Classic Oyunun 90 Yılı 11021 - 5 Yaş ve Üzeri İçin 15 Mini Model Içeren Oyuncak Yapım Seti (1100 Parça)"> <img src="images/urun2.png" id="images2" class="img-thumbnail" /></a>
+                <a href="urun2.html">
+                    <h3 title="LEGO® Classic Oyunun 90 Yılı 11021 - 5 Yaş ve Üzeri İçin 15 Mini Model Içeren Oyuncak Yapım Seti (1100 Parça)">LEGO® Classic Oyunun 90 Yılı 11021 - 5 Yaş ve Üzeri İçin 15 Mini Model Içeren Oyuncak Yapım Seti (1100 Parça)</h3>
+                    <h3 id="price" title="LEGO® Classic Oyunun 90 Yılı 11021 - 5 Yaş ve Üzeri İçin 15 Mini Model Içeren Oyuncak Yapım Seti (1100 Parça)">779.90 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun3.html" title="Ben 10 Işıklı Müzikli Uzay Sesli Omnitrix Benten Saat"> <img src="images/urun3.png" id="images3" class="img-thumbnail" /></a>
+                <a href="urun3.html">
+                    <h3 title="Ben 10 Işıklı Müzikli Uzay Sesli Omnitrix Benten Saat">Ben 10 Işıklı Müzikli Uzay Sesli Omnitrix Benten Saat</h3>
+                    <h3 id="price" title="Ben 10 Işıklı Müzikli Uzay Sesli Omnitrix Benten Saat">58.48 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun4.html" title="Hot Wheels Beşli Araba Seti - Oyuncak Araba Koleksiyonu, 1:64 Ölçek - 1806"> <img src="images/urun4.png" id="images4" class="img-thumbnail" /></a>
+                <a href="urun4.html">
+                    <h3 title="Hot Wheels Beşli Araba Seti - Oyuncak Araba Koleksiyonu, 1:64 Ölçek - 1806">Hot Wheels Beşli Araba Seti - Oyuncak Araba Koleksiyonu, 1:64 Ölçek - 1806</h3>
+                    <h3 id="price" title="Hot Wheels Beşli Araba Seti - Oyuncak Araba Koleksiyonu, 1:64 Ölçek - 1806">89.90 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun5.html" title="LEGO® Technic McLaren Senna GTR™ 42123 - Çocuk ve Yetişkinler için Koleksiyonluk Oyuncak Araba Yapım Seti (830 Parça)"> <img src="images/urun5.png" id="images5" class="img-thumbnail" /></a>
+                <a href="urun5.html">
+                    <h3 title="LEGO® Technic McLaren Senna GTR™ 42123 - Çocuk ve Yetişkinler için Koleksiyonluk Oyuncak Araba Yapım Seti (830 Parça)">LEGO® Technic McLaren Senna GTR™ 42123 - Çocuk ve Yetişkinler için Koleksiyonluk Oyuncak Araba Yapım Seti (830 Parça)</h3>
+                    <h3 id="price" title="LEGO® Technic McLaren Senna GTR™ 42123 - Çocuk ve Yetişkinler için Koleksiyonluk Oyuncak Araba Yapım Seti (830 Parça)">574.90 TL</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-">
+        <div class="row">
+            <div class="col-md">
+                <a href="urun6.html" title="By Öztek Konuşan Dans Eden Kaktüs Müzikli Işıklı Saksı Peluş Oyuncak - Cactus Toy - Dansçı Kaktüs"> <img src="images/urun6.png" id="images6" /></a>
+                <a href="urun6.html">
+                    <h3 title="By Öztek Konuşan Dans Eden Kaktüs Müzikli Işıklı Saksı Peluş Oyuncak - Cactus Toy - Dansçı Kaktüs">By Öztek Konuşan Dans Eden Kaktüs Müzikli Işıklı Saksı Peluş Oyuncak - Cactus Toy - Dansçı Kaktüs</h3>
+                    <h3 id="price" title="By Öztek Konuşan Dans Eden Kaktüs Müzikli Işıklı Saksı Peluş Oyuncak - Cactus Toy - Dansçı Kaktüs">158.27 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun7.html" title="LEGO® Creator 3’ü 1 Arada Siber İnsansız Hava Aracı 31111 - Çocuklar için Robot ve Motosiklet İçeren Oyuncak Yapım Seti (113 Parça)"> <img src="images/urun7.png" id="images7" /></a>
+                <a href="urun7.html">
+                    <h3 title="LEGO® Creator 3’ü 1 Arada Siber İnsansız Hava Aracı 31111 - Çocuklar için Robot ve Motosiklet İçeren Oyuncak Yapım Seti (113 Parça)">LEGO® Creator 3’ü 1 Arada Siber İnsansız Hava Aracı 31111 - Çocuklar için Robot ve Motosiklet İçeren Oyuncak Yapım Seti (113 Parça)</h3>
+                    <h3 id="price" title="LEGO® Creator 3’ü 1 Arada Siber İnsansız Hava Aracı 31111 - Çocuklar için Robot ve Motosiklet İçeren Oyuncak Yapım Seti (113 Parça)">129,89 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun8.html" title="LEGO® DUPLO Classic 65 Parçalık Yapım Parçaları Kutusu (10913) - Çocuk Oyuncak Yapım Seti"> <img src="images/urun8.png" id="images8" /></a>
+                <a href="urun8.html">
+                    <h3 title="LEGO® DUPLO Classic 65 Parçalık Yapım Parçaları Kutusu (10913) - Çocuk Oyuncak Yapım Seti">LEGO® DUPLO Classic 65 Parçalık Yapım Parçaları Kutusu (10913) - Çocuk Oyuncak Yapım Seti</h3>
+                    <h3 id="price" title="LEGO® DUPLO Classic 65 Parçalık Yapım Parçaları Kutusu (10913) - Çocuk Oyuncak Yapım Seti">328.90 TL</h3>
+                </a>
+            </div>
+            <div class="col-md">
+                <a href="urun9.html" title="LEGO® Technic Monster Jam™ El Toro Loco™ 42135 – Araçları Seven Çocuklar İçin 2’si 1 Arada Yaratıcı Oyuncak Model Yapım Seti (247 Parça)"> <img src="images/urun9.png" id="images9" /></a>
+                <a href="urun9.html">
+                    <h3 title="LEGO® Technic Monster Jam™ El Toro Loco™ 42135 – Araçları Seven Çocuklar İçin 2’si 1 Arada Yaratıcı Oyuncak Model Yapım Seti (247 Parça)">LEGO® Technic Monster Jam™ El Toro Loco™ 42135 – Araçları Seven Çocuklar İçin 2’si 1 Arada Yaratıcı Oyuncak Model Yapım Seti (247 Parça)</h3>
+                    <h3 id="price" title="LEGO® Technic Monster Jam™ El Toro Loco™ 42135 – Araçları Seven Çocuklar İçin 2’si 1 Arada Yaratıcı Oyuncak Model Yapım Seti (247 Parça)">242,72 TL</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="javascript/ui.js"></script>
+    <script src="javascript/storage.js"></script>
+    <script src="javascript/sepet.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/jq.js"></script>
+</body>
+
+</html>
